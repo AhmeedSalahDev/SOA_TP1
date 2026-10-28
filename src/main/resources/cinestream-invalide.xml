@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Document volontairement INVALIDE pour tester la validation -->
+<plateforme nom="CineStream">
+    <realisateurs>
+        <realisateur id="R1">
+            <nom>Christopher Nolan</nom>
+            <nationalite>Britannique</nationalite>
+        </realisateur>
+    </realisateurs>
+    <films>
+        <film id="F1" realisateur="R9">
+            <titre>Inception</titre>
+            <annee>2010</annee>
+            <duree>148</duree>
+            <genres>
+                <genre>Science-fiction</genre>
+            </genres>
+            <note>12.5</note>
+            <prix devise="TND" promotion="false">12.000</prix>
+        </film>
+    </films>
+    <utilisateurs/>
+</plateforme>

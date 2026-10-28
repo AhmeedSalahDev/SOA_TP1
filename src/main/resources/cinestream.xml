@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Plateforme de streaming de films : CinéStream -->
+<plateforme nom="CineStream"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="cinestream.xsd">
+
+    <realisateurs>
+        <realisateur id="R1">
+            <nom>Christopher Nolan</nom>
+            <nationalite>Britannique</nationalite>
+        </realisateur>
+        <realisateur id="R2">
+            <nom>Bong Joon-ho</nom>
+            <nationalite>Sud-coréenne</nationalite>
+        </realisateur>
+        <realisateur id="R3">
+            <nom>Kaouther Ben Hania</nom>
+            <nationalite>Tunisienne</nationalite>
+        </realisateur>
+    </realisateurs>
+
+    <films>
+        <film id="F1" realisateur="R1">
+            <titre>Inception</titre>
+            <annee>2010</annee>
+            <duree>148</duree>
+            <genres>
+                <genre>Science-fiction</genre>
+                <genre>Action</genre>
+            </genres>
+            <note>8.8</note>
+            <prix devise="TND" promotion="false">12.000</prix>
+        </film>
+        <film id="F2" realisateur="R1">
+            <titre>Interstellar</titre>
+            <annee>2014</annee>
+            <duree>169</duree>
+            <genres>
+                <genre>Science-fiction</genre>
+                <genre>Drame</genre>
+            </genres>
+            <note>8.7</note>
+            <prix devise="TND" promotion="true" remise="30">9.000</prix>
+        </film>
+        <film id="F3" realisateur="R2">
+            <titre>Parasite</titre>
+            <annee>2019</annee>
+            <duree>132</duree>
+            <genres>
+                <genre>Thriller</genre>
+                <genre>Drame</genre>
+            </genres>
+            <note>8.5</note>
+            <prix devise="TND" promotion="true" remise="20">10.000</prix>
+        </film>
+        <film id="F4" realisateur="R3">
+            <titre>Les Filles d'Olfa</titre>
+            <annee>2023</annee>
+            <duree>110</duree>
+            <genres>
+                <genre>Documentaire</genre>
+                <genre>Drame</genre>
+            </genres>
+            <note>7.6</note>
+            <prix devise="TND" promotion="false">8.500</prix>
+        </film>
+        <film id="F5" realisateur="R3">
+            <titre>La Belle et la Meute</titre>
+            <annee>2017</annee>
+            <duree>100</duree>
+            <genres>
+                <genre>Drame</genre>
+            </genres>
+            <note>7.1</note>
+            <prix devise="TND" promotion="true" remise="15">7.000</prix>
+        </film>
+    </films>
+
+    <utilisateurs>
+        <utilisateur id="U1" actif="true">
+            <nom>Ahmed Ben Salah</nom>
+            <email>ahmed.bensalah@exemple.tn</email>
+            <abonnement type="Premium" dateDebut="2025-09-01"/>
+            <favoris>
+                <favori film="F1"/>
+                <favori film="F3"/>
+            </favoris>
+        </utilisateur>
+        <utilisateur id="U2" actif="false">
+            <nom>Sarra Trabelsi</nom>
+            <email>sarra.trabelsi@exemple.tn</email>
+            <abonnement type="Standard" dateDebut="2024-03-15"/>
+            <favoris>
+                <favori film="F4"/>
+            </favoris>
+        </utilisateur>
+        <utilisateur id="U3" actif="true">
+            <nom>Youssef Gharbi</nom>
+            <email>youssef.gharbi@exemple.tn</email>
+            <abonnement type="Basique" dateDebut="2026-01-10"/>
+            <favoris>
+                <favori film="F2"/>
+                <favori film="F4"/>
+                <favori film="F5"/>
+            </favoris>
+        </utilisateur>
+        <utilisateur id="U4" actif="true">
+            <nom>Mariem Karray</nom>
+            <email>mariem.karray@exemple.tn</email>
+            <abonnement type="Premium" dateDebut="2025-11-20"/>
+            <favoris/>
+        </utilisateur>
+    </utilisateurs>
+</plateforme>
